@@ -45,4 +45,10 @@ class Encoder {
     func numberOfEntries() {
         // TODO:
     }
+    
+    func generate() -> String {
+        let header = Header(issuerIdentificationNumber: "00", AAMVAVersionNumber: "00", jurisdictionVersionNumber: "00", numberOfEntries: "01")
+        
+        return "\(header)"
+    }
 }
