@@ -76,8 +76,9 @@ class ViewController: NSViewController {
     
     @IBAction func generate(sender: Any) {
         let barcode = Encoder()
-        
-        print(lastName)
+
+        barcode.documentDiscriminator = "2509UN6813300000"
+
         
         print(barcode.generate());
     }

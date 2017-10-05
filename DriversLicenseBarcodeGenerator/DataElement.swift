@@ -8,17 +8,24 @@
 
 import Foundation
 
-enum CardType {
-    case DL, ID, Both
-}
-
 enum DataElement {
+    enum Truncation: String {
+        case Yes = "T"
+        case No = "N"
+        case Unknown = "U"
+    }
+    
+    enum CardType {
+        case DL, ID, Both
+    }
+    
     case DAH(String)
     case DCA(String)
     case DCB(String)
     case DCD(String)
     case DBA(String)
     case DCS(String)
+    case DFC(String)
     
     var commonName: String {
         switch self {
@@ -40,3 +47,6 @@ enum DataElement {
         }
     }
 }
+
+
+DataElement.DCF("123455")
