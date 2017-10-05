@@ -18,9 +18,9 @@
 		FC5333FD1F8679E200D546F1 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5333FC1F8679E200D546F1 /* Document.swift */; };
 		FC5333FF1F8679E200D546F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5333FE1F8679E200D546F1 /* Assets.xcassets */; };
 		FC5334021F8679E200D546F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5334001F8679E200D546F1 /* Main.storyboard */; };
-		FC53340D1F8679E200D546F1 /* EncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53340C1F8679E200D546F1 /* EncoderTests.swift */; };
-		FC5334181F867A4F00D546F1 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5334171F867A4F00D546F1 /* Encoder.swift */; };
-		FC53341A1F867B3E00D546F1 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5334171F867A4F00D546F1 /* Encoder.swift */; };
+		FC53340D1F8679E200D546F1 /* BarcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53340C1F8679E200D546F1 /* BarcodeTests.swift */; };
+		FC5334181F867A4F00D546F1 /* Barcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5334171F867A4F00D546F1 /* Barcode.swift */; };
+		FC53341A1F867B3E00D546F1 /* Barcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5334171F867A4F00D546F1 /* Barcode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +46,9 @@
 		FC5334011F8679E200D546F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC5334031F8679E200D546F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC5334081F8679E200D546F1 /* DriversLicenseBarcodeGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriversLicenseBarcodeGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC53340C1F8679E200D546F1 /* EncoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncoderTests.swift; sourceTree = "<group>"; };
+		FC53340C1F8679E200D546F1 /* BarcodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeTests.swift; sourceTree = "<group>"; };
 		FC53340E1F8679E200D546F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC5334171F867A4F00D546F1 /* Encoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encoder.swift; sourceTree = "<group>"; };
+		FC5334171F867A4F00D546F1 /* Barcode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Barcode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 				FC5333FE1F8679E200D546F1 /* Assets.xcassets */,
 				FC5334001F8679E200D546F1 /* Main.storyboard */,
 				FC5334031F8679E200D546F1 /* Info.plist */,
-				FC5334171F867A4F00D546F1 /* Encoder.swift */,
+				FC5334171F867A4F00D546F1 /* Barcode.swift */,
 				FC30F6E61F868A21002C5657 /* Header.swift */,
 				FC30F6EB1F869732002C5657 /* DataElement.swift */,
 				FC30F6EE1F8697CB002C5657 /* DataElementTests.swift */,
@@ -107,7 +107,7 @@
 		FC53340B1F8679E200D546F1 /* DriversLicenseBarcodeGeneratorTests */ = {
 			isa = PBXGroup;
 			children = (
-				FC53340C1F8679E200D546F1 /* EncoderTests.swift */,
+				FC53340C1F8679E200D546F1 /* BarcodeTests.swift */,
 				FC53340E1F8679E200D546F1 /* Info.plist */,
 				FC30F6E91F868B04002C5657 /* HeaderTests.swift */,
 			);
@@ -223,7 +223,7 @@
 				FC5333F91F8679E200D546F1 /* AppDelegate.swift in Sources */,
 				FC5333FD1F8679E200D546F1 /* Document.swift in Sources */,
 				FC30F6EC1F869732002C5657 /* DataElement.swift in Sources */,
-				FC5334181F867A4F00D546F1 /* Encoder.swift in Sources */,
+				FC5334181F867A4F00D546F1 /* Barcode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,9 +234,9 @@
 				FC30F6EF1F8697CB002C5657 /* DataElementTests.swift in Sources */,
 				FC30F6ED1F869732002C5657 /* DataElement.swift in Sources */,
 				FC30F6EA1F868B04002C5657 /* HeaderTests.swift in Sources */,
-				FC53340D1F8679E200D546F1 /* EncoderTests.swift in Sources */,
+				FC53340D1F8679E200D546F1 /* BarcodeTests.swift in Sources */,
 				FC30F6E81F868A21002C5657 /* Header.swift in Sources */,
-				FC53341A1F867B3E00D546F1 /* Encoder.swift in Sources */,
+				FC53341A1F867B3E00D546F1 /* Barcode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

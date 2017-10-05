@@ -9,7 +9,7 @@
 import XCTest
 @testable import DriversLicenseBarcodeGenerator
 
-class EncoderTests: XCTestCase {
+class BarcodeTests: XCTestCase {
     override func setUp() {
         super.setUp()
     }

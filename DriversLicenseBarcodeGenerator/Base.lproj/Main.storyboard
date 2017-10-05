@@ -1200,6 +1200,7 @@
                         <outlet property="expirationDatePicker" destination="Xcp-hZ-8ZV" id="d6G-z6-lG1"/>
                         <outlet property="eyeColor" destination="p4i-i8-hmf" id="KRg-Q8-QNx"/>
                         <outlet property="firstNameTextField" destination="23L-Gn-QEl" id="tPN-Jv-ZO5"/>
+                        <outlet property="imageView" destination="ovY-2x-GBn" id="CL7-Ao-e1c"/>
                         <outlet property="issueDatePicker" destination="mqX-Br-hcX" id="rEE-E5-WXu"/>
                         <outlet property="lastNameTextField" destination="Pal-sK-nRG" id="9JH-5z-bR1"/>
                         <outlet property="middleNameTextField" destination="GWZ-vj-YiM" id="vn7-XL-0II"/>
