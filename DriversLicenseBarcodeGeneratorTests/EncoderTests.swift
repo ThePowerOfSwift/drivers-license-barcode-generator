@@ -42,6 +42,10 @@ class EncoderTests: XCTestCase {
         XCTAssertEqual(Encoder.AAMVAVersionNumber, "08")
     }
     
+    func testJurisdictionVersionNumber() {
+        XCTAssertEqual(Encoder.jurisdictionVersionNumber, "00")
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

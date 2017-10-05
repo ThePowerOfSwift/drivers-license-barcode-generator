@@ -8,6 +8,11 @@
 
 import Foundation
 
+enum SubfileType: String {
+    case DL = "DL"
+    case ID = "ID"
+}
+
 class Encoder {
     static let complianceIndicator = "\u{40}"
     static let dataElementSeparator = "\u{0A}"
@@ -27,4 +32,17 @@ class Encoder {
     static let issuerIdentificationNumber = ""
     
     static let AAMVAVersionNumber = "08" // current version of the AAMVA standard
+    
+    static let jurisdictionVersionNumber = "00"
+    
+    
+    // Number of Entries: This is a decimal value between “01 and 99” that specifies the number of 
+    // different Subfile types that are contained in the bar code. This value defines the number 
+    // of individual subfile designators that follow. All subfile designators (as defined below) 
+    // follow one behind the other. The data related to the first subfile designator follows the 
+    // last Subfile Designator.
+    
+    func numberOfEntries() {
+        // TODO:
+    }
 }
