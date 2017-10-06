@@ -25,30 +25,6 @@ class ViewController: NSViewController {
     @IBOutlet var jurisdictionSpecificRestrictionCodesTextField: NSTextField!
     @IBOutlet var physicalDescriptionHeightTextField: NSTextField!
 
-    private var customerFirstName: String {
-        return firstNameTextField.stringValue
-    }
-    
-    private var middleName: String {
-        return middleNameTextField.stringValue
-    }
-    
-    private var customerFamilyName: String {
-        return lastNameTextField.stringValue;
-    }
-    
-    private var customerIDNumber: String {
-        return customerIDNumberTextField.stringValue
-    }
-    
-    private var dateOfBirth: Date {
-        return dateOfBirthDatePicker.dateValue
-    }
-    
-    private var addressCity: String {
-        return cityTextField.stringValue
-    }
-    
     private var jurisdictionSpecificEndorsementCodes: String {
         return jurisdictionSpecificEndorsementCodesTextField.stringValue
     }
@@ -57,31 +33,34 @@ class ViewController: NSViewController {
         return jurisdictionSpecificEndorsementCodesTextField.stringValue
     }
     
-    private var addressJurisdictionCode: String {
-        return "OH"
-//        return statePopupButton.selectedItem!.tag // TODO: How do you get the value of a popup?
-    }
-    
     private var jurisdictionSpecificVehicleClass: String {
         return jurisdictionSpecificVehicleClassTextField.stringValue
-    }
-    
-    private var zip: String {
-        return zipTextField.stringValue
     }
     
     private var documentExpirationDate: Date {
         return expirationDatePicker.dateValue
     }
+
+    private var customerFamilyName: String {
+        return lastNameTextField.stringValue;
+    }
+    
+    private var customerFirstName: String {
+        return firstNameTextField.stringValue
+    }
+    
+    private var customerMiddleNames: [String] {
+        return [middleNameTextField.stringValue]
+    }
     
     private var documentIssueDate: Date {
         return issueDatePicker.dateValue;
     }
-    
-    private var addressPostalCode: String {
-        return zipTextField.stringValue
+
+    private var dateOfBirth: Date {
+        return dateOfBirthDatePicker.dateValue
     }
-    
+
     private var physicalDescriptionSex: DataElementGender {
         return .Male // TODO: Get this from the picker
     }
@@ -91,17 +70,33 @@ class ViewController: NSViewController {
     }
     
     private var physicalDescriptionHeight: Int {
-       return physicalDescriptionHeightTextField.integerValue
+        return physicalDescriptionHeightTextField.integerValue
+    }
+
+    private var addressStreet1: String {
+        return address1TextField.stringValue;
+    }
+    
+    private var addressCity: String {
+        return cityTextField.stringValue
+    }
+
+    private var addressJurisdictionCode: String {
+        return "OH" // TODO: How do you get the value of a popup?
+    }
+
+    private var addressPostalCode: String {
+        return zipTextField.stringValue
+    }
+    
+    private var customerIDNumber: String {
+        return customerIDNumberTextField.stringValue
     }
     
     private var documentDiscriminator: String {
         return "1234567890123456789012345" // TODO: Create some kind of generator for this and populate a field in the UI w/ it initially
     }
-    
-    private var addressStreet1: String {
-        return address1TextField.stringValue;
-    }
-    
+
     private var countryIdentification: DataElementCountryIdentificationCode {
         return .US // TODO
     }
@@ -114,7 +109,7 @@ class ViewController: NSViewController {
             DBA(documentExpirationDate),
             DCS(customerFamilyName),
             DAC(customerFirstName),
-            DAD([middleName]),
+            DAD(customerMiddleNames),
             DBD(documentIssueDate),
             DBB(dateOfBirth),
             DBC(physicalDescriptionSex),
