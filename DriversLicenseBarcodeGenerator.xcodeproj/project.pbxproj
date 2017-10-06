@@ -13,6 +13,55 @@
 		FC30F6EC1F869732002C5657 /* DataElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6EB1F869732002C5657 /* DataElement.swift */; };
 		FC30F6ED1F869732002C5657 /* DataElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6EB1F869732002C5657 /* DataElement.swift */; };
 		FC30F6EF1F8697CB002C5657 /* DataElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6EE1F8697CB002C5657 /* DataElementTests.swift */; };
+		FC30F6F11F86C888002C5657 /* DataElementFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6F01F86C888002C5657 /* DataElementFormatter.swift */; };
+		FC30F6F21F86C888002C5657 /* DataElementFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6F01F86C888002C5657 /* DataElementFormatter.swift */; };
+		FC30F6F71F86CBE3002C5657 /* NewDataElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6F61F86CBE3002C5657 /* NewDataElement.swift */; };
+		FC30F6F81F86CBE3002C5657 /* NewDataElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6F61F86CBE3002C5657 /* NewDataElement.swift */; };
+		FC30F6FA1F86CC74002C5657 /* DCA.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6F91F86CC74002C5657 /* DCA.swift */; };
+		FC30F6FB1F86CC74002C5657 /* DCA.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6F91F86CC74002C5657 /* DCA.swift */; };
+		FC30F6FE1F86D252002C5657 /* DCB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6FD1F86D252002C5657 /* DCB.swift */; };
+		FC30F6FF1F86D252002C5657 /* DCB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6FD1F86D252002C5657 /* DCB.swift */; };
+		FC30F7011F86D28D002C5657 /* DCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7001F86D28D002C5657 /* DCD.swift */; };
+		FC30F7021F86D28D002C5657 /* DCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7001F86D28D002C5657 /* DCD.swift */; };
+		FC30F7041F86D2BE002C5657 /* DBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7031F86D2BE002C5657 /* DBA.swift */; };
+		FC30F7051F86D2BE002C5657 /* DBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7031F86D2BE002C5657 /* DBA.swift */; };
+		FC30F7081F86D458002C5657 /* DCS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7071F86D458002C5657 /* DCS.swift */; };
+		FC30F7091F86D458002C5657 /* DCS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7071F86D458002C5657 /* DCS.swift */; };
+		FC30F70B1F86D460002C5657 /* DAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F70A1F86D460002C5657 /* DAC.swift */; };
+		FC30F70C1F86D460002C5657 /* DAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F70A1F86D460002C5657 /* DAC.swift */; };
+		FC30F70E1F86D46C002C5657 /* DAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F70D1F86D46C002C5657 /* DAD.swift */; };
+		FC30F70F1F86D46C002C5657 /* DAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F70D1F86D46C002C5657 /* DAD.swift */; };
+		FC30F7111F86D473002C5657 /* DBD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7101F86D473002C5657 /* DBD.swift */; };
+		FC30F7121F86D473002C5657 /* DBD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7101F86D473002C5657 /* DBD.swift */; };
+		FC30F7141F86D47D002C5657 /* DBB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7131F86D47D002C5657 /* DBB.swift */; };
+		FC30F7151F86D47D002C5657 /* DBB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7131F86D47D002C5657 /* DBB.swift */; };
+		FC30F7171F86D485002C5657 /* DBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7161F86D485002C5657 /* DBC.swift */; };
+		FC30F7181F86D485002C5657 /* DBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7161F86D485002C5657 /* DBC.swift */; };
+		FC30F71A1F86D48E002C5657 /* DAY.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7191F86D48E002C5657 /* DAY.swift */; };
+		FC30F71B1F86D48E002C5657 /* DAY.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7191F86D48E002C5657 /* DAY.swift */; };
+		FC30F71D1F86D495002C5657 /* DAU.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F71C1F86D495002C5657 /* DAU.swift */; };
+		FC30F71E1F86D495002C5657 /* DAU.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F71C1F86D495002C5657 /* DAU.swift */; };
+		FC30F7201F86D49C002C5657 /* DAG.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F71F1F86D49C002C5657 /* DAG.swift */; };
+		FC30F7211F86D49C002C5657 /* DAG.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F71F1F86D49C002C5657 /* DAG.swift */; };
+		FC30F7231F86D4A7002C5657 /* DAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7221F86D4A7002C5657 /* DAI.swift */; };
+		FC30F7241F86D4A7002C5657 /* DAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7221F86D4A7002C5657 /* DAI.swift */; };
+		FC30F7261F86D4B0002C5657 /* DAJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7251F86D4B0002C5657 /* DAJ.swift */; };
+		FC30F7271F86D4B0002C5657 /* DAJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7251F86D4B0002C5657 /* DAJ.swift */; };
+		FC30F7291F86D4B9002C5657 /* DAK.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7281F86D4B9002C5657 /* DAK.swift */; };
+		FC30F72A1F86D4B9002C5657 /* DAK.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7281F86D4B9002C5657 /* DAK.swift */; };
+		FC30F72C1F86D4C1002C5657 /* DAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F72B1F86D4C1002C5657 /* DAQ.swift */; };
+		FC30F72D1F86D4C1002C5657 /* DAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F72B1F86D4C1002C5657 /* DAQ.swift */; };
+		FC30F72F1F86D4CA002C5657 /* DCF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F72E1F86D4CA002C5657 /* DCF.swift */; };
+		FC30F7301F86D4CA002C5657 /* DCF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F72E1F86D4CA002C5657 /* DCF.swift */; };
+		FC30F7321F86D4D0002C5657 /* DCG.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7311F86D4D0002C5657 /* DCG.swift */; };
+		FC30F7331F86D4D0002C5657 /* DCG.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7311F86D4D0002C5657 /* DCG.swift */; };
+		FC30F7351F86D4D7002C5657 /* DDE.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7341F86D4D7002C5657 /* DDE.swift */; };
+		FC30F7361F86D4D7002C5657 /* DDE.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7341F86D4D7002C5657 /* DDE.swift */; };
+		FC30F7381F86D4DD002C5657 /* DDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7371F86D4DD002C5657 /* DDF.swift */; };
+		FC30F7391F86D4DD002C5657 /* DDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F7371F86D4DD002C5657 /* DDF.swift */; };
+		FC30F73B1F86D4E4002C5657 /* DDG.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F73A1F86D4E4002C5657 /* DDG.swift */; };
+		FC30F73C1F86D4E4002C5657 /* DDG.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F73A1F86D4E4002C5657 /* DDG.swift */; };
+		FC30F73E1F86D56A002C5657 /* DCGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F73D1F86D56A002C5657 /* DCGTests.swift */; };
 		FC5333F91F8679E200D546F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5333F81F8679E200D546F1 /* AppDelegate.swift */; };
 		FC5333FB1F8679E200D546F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5333FA1F8679E200D546F1 /* ViewController.swift */; };
 		FC5333FD1F8679E200D546F1 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5333FC1F8679E200D546F1 /* Document.swift */; };
@@ -21,6 +70,7 @@
 		FC53340D1F8679E200D546F1 /* BarcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53340C1F8679E200D546F1 /* BarcodeTests.swift */; };
 		FC5334181F867A4F00D546F1 /* Barcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5334171F867A4F00D546F1 /* Barcode.swift */; };
 		FC53341A1F867B3E00D546F1 /* Barcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5334171F867A4F00D546F1 /* Barcode.swift */; };
+		FCDFB1F71F87B167003FBC60 /* DCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDFB1F61F87B167003FBC60 /* DCATests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +88,31 @@
 		FC30F6E91F868B04002C5657 /* HeaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTests.swift; sourceTree = "<group>"; };
 		FC30F6EB1F869732002C5657 /* DataElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataElement.swift; sourceTree = "<group>"; };
 		FC30F6EE1F8697CB002C5657 /* DataElementTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataElementTests.swift; sourceTree = "<group>"; };
+		FC30F6F01F86C888002C5657 /* DataElementFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataElementFormatter.swift; sourceTree = "<group>"; };
+		FC30F6F61F86CBE3002C5657 /* NewDataElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDataElement.swift; sourceTree = "<group>"; };
+		FC30F6F91F86CC74002C5657 /* DCA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCA.swift; sourceTree = "<group>"; };
+		FC30F6FD1F86D252002C5657 /* DCB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCB.swift; sourceTree = "<group>"; };
+		FC30F7001F86D28D002C5657 /* DCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCD.swift; sourceTree = "<group>"; };
+		FC30F7031F86D2BE002C5657 /* DBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBA.swift; sourceTree = "<group>"; };
+		FC30F7071F86D458002C5657 /* DCS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCS.swift; sourceTree = "<group>"; };
+		FC30F70A1F86D460002C5657 /* DAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAC.swift; sourceTree = "<group>"; };
+		FC30F70D1F86D46C002C5657 /* DAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAD.swift; sourceTree = "<group>"; };
+		FC30F7101F86D473002C5657 /* DBD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBD.swift; sourceTree = "<group>"; };
+		FC30F7131F86D47D002C5657 /* DBB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBB.swift; sourceTree = "<group>"; };
+		FC30F7161F86D485002C5657 /* DBC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBC.swift; sourceTree = "<group>"; };
+		FC30F7191F86D48E002C5657 /* DAY.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAY.swift; sourceTree = "<group>"; };
+		FC30F71C1F86D495002C5657 /* DAU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAU.swift; sourceTree = "<group>"; };
+		FC30F71F1F86D49C002C5657 /* DAG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAG.swift; sourceTree = "<group>"; };
+		FC30F7221F86D4A7002C5657 /* DAI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAI.swift; sourceTree = "<group>"; };
+		FC30F7251F86D4B0002C5657 /* DAJ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAJ.swift; sourceTree = "<group>"; };
+		FC30F7281F86D4B9002C5657 /* DAK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAK.swift; sourceTree = "<group>"; };
+		FC30F72B1F86D4C1002C5657 /* DAQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAQ.swift; sourceTree = "<group>"; };
+		FC30F72E1F86D4CA002C5657 /* DCF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCF.swift; sourceTree = "<group>"; };
+		FC30F7311F86D4D0002C5657 /* DCG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCG.swift; sourceTree = "<group>"; };
+		FC30F7341F86D4D7002C5657 /* DDE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDE.swift; sourceTree = "<group>"; };
+		FC30F7371F86D4DD002C5657 /* DDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDF.swift; sourceTree = "<group>"; };
+		FC30F73A1F86D4E4002C5657 /* DDG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDG.swift; sourceTree = "<group>"; };
+		FC30F73D1F86D56A002C5657 /* DCGTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCGTests.swift; sourceTree = "<group>"; };
 		FC5333F51F8679E200D546F1 /* DriversLicenseBarcodeGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriversLicenseBarcodeGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5333F81F8679E200D546F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC5333FA1F8679E200D546F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +124,7 @@
 		FC53340C1F8679E200D546F1 /* BarcodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeTests.swift; sourceTree = "<group>"; };
 		FC53340E1F8679E200D546F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC5334171F867A4F00D546F1 /* Barcode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Barcode.swift; sourceTree = "<group>"; };
+		FCDFB1F61F87B167003FBC60 /* DCATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCATests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +145,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC30F6FC1F86D132002C5657 /* Data Elements */ = {
+			isa = PBXGroup;
+			children = (
+				FC30F6F91F86CC74002C5657 /* DCA.swift */,
+				FC30F6FD1F86D252002C5657 /* DCB.swift */,
+				FC30F7001F86D28D002C5657 /* DCD.swift */,
+				FC30F7031F86D2BE002C5657 /* DBA.swift */,
+				FC30F7071F86D458002C5657 /* DCS.swift */,
+				FC30F70A1F86D460002C5657 /* DAC.swift */,
+				FC30F70D1F86D46C002C5657 /* DAD.swift */,
+				FC30F7101F86D473002C5657 /* DBD.swift */,
+				FC30F7131F86D47D002C5657 /* DBB.swift */,
+				FC30F7161F86D485002C5657 /* DBC.swift */,
+				FC30F7191F86D48E002C5657 /* DAY.swift */,
+				FC30F71C1F86D495002C5657 /* DAU.swift */,
+				FC30F71F1F86D49C002C5657 /* DAG.swift */,
+				FC30F7221F86D4A7002C5657 /* DAI.swift */,
+				FC30F7251F86D4B0002C5657 /* DAJ.swift */,
+				FC30F7281F86D4B9002C5657 /* DAK.swift */,
+				FC30F72B1F86D4C1002C5657 /* DAQ.swift */,
+				FC30F72E1F86D4CA002C5657 /* DCF.swift */,
+				FC30F7311F86D4D0002C5657 /* DCG.swift */,
+				FC30F7341F86D4D7002C5657 /* DDE.swift */,
+				FC30F7371F86D4DD002C5657 /* DDF.swift */,
+				FC30F73A1F86D4E4002C5657 /* DDG.swift */,
+			);
+			name = "Data Elements";
+			sourceTree = "<group>";
+		};
+		FC30F73F1F86D56E002C5657 /* Data Elements */ = {
+			isa = PBXGroup;
+			children = (
+				FC30F73D1F86D56A002C5657 /* DCGTests.swift */,
+				FCDFB1F61F87B167003FBC60 /* DCATests.swift */,
+			);
+			name = "Data Elements";
+			sourceTree = "<group>";
+		};
 		FC5333EC1F8679E200D546F1 = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +213,9 @@
 				FC5334171F867A4F00D546F1 /* Barcode.swift */,
 				FC30F6E61F868A21002C5657 /* Header.swift */,
 				FC30F6EB1F869732002C5657 /* DataElement.swift */,
-				FC30F6EE1F8697CB002C5657 /* DataElementTests.swift */,
+				FC30F6F61F86CBE3002C5657 /* NewDataElement.swift */,
+				FC30F6F01F86C888002C5657 /* DataElementFormatter.swift */,
+				FC30F6FC1F86D132002C5657 /* Data Elements */,
 			);
 			path = DriversLicenseBarcodeGenerator;
 			sourceTree = "<group>";
@@ -107,9 +223,11 @@
 		FC53340B1F8679E200D546F1 /* DriversLicenseBarcodeGeneratorTests */ = {
 			isa = PBXGroup;
 			children = (
+				FC30F6EE1F8697CB002C5657 /* DataElementTests.swift */,
 				FC53340C1F8679E200D546F1 /* BarcodeTests.swift */,
 				FC53340E1F8679E200D546F1 /* Info.plist */,
 				FC30F6E91F868B04002C5657 /* HeaderTests.swift */,
+				FC30F73F1F86D56E002C5657 /* Data Elements */,
 			);
 			path = DriversLicenseBarcodeGeneratorTests;
 			sourceTree = "<group>";
@@ -159,17 +277,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Kyle Decot";
 				TargetAttributes = {
 					FC5333F41F8679E200D546F1 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 74MF967YTF;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					FC5334071F8679E200D546F1 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 74MF967YTF;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = FC5333F41F8679E200D546F1;
 					};
@@ -218,11 +338,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC30F72C1F86D4C1002C5657 /* DAQ.swift in Sources */,
+				FC30F7081F86D458002C5657 /* DCS.swift in Sources */,
+				FC30F7231F86D4A7002C5657 /* DAI.swift in Sources */,
+				FC30F72F1F86D4CA002C5657 /* DCF.swift in Sources */,
+				FC30F7111F86D473002C5657 /* DBD.swift in Sources */,
+				FC30F7351F86D4D7002C5657 /* DDE.swift in Sources */,
+				FC30F7261F86D4B0002C5657 /* DAJ.swift in Sources */,
+				FC30F73B1F86D4E4002C5657 /* DDG.swift in Sources */,
+				FC30F7201F86D49C002C5657 /* DAG.swift in Sources */,
 				FC30F6E71F868A21002C5657 /* Header.swift in Sources */,
 				FC5333FB1F8679E200D546F1 /* ViewController.swift in Sources */,
+				FC30F7321F86D4D0002C5657 /* DCG.swift in Sources */,
+				FC30F7011F86D28D002C5657 /* DCD.swift in Sources */,
+				FC30F7291F86D4B9002C5657 /* DAK.swift in Sources */,
 				FC5333F91F8679E200D546F1 /* AppDelegate.swift in Sources */,
+				FC30F6FA1F86CC74002C5657 /* DCA.swift in Sources */,
 				FC5333FD1F8679E200D546F1 /* Document.swift in Sources */,
+				FC30F71D1F86D495002C5657 /* DAU.swift in Sources */,
+				FC30F7041F86D2BE002C5657 /* DBA.swift in Sources */,
+				FC30F70B1F86D460002C5657 /* DAC.swift in Sources */,
+				FC30F6F11F86C888002C5657 /* DataElementFormatter.swift in Sources */,
+				FC30F7141F86D47D002C5657 /* DBB.swift in Sources */,
+				FC30F7171F86D485002C5657 /* DBC.swift in Sources */,
+				FC30F71A1F86D48E002C5657 /* DAY.swift in Sources */,
+				FC30F7381F86D4DD002C5657 /* DDF.swift in Sources */,
+				FC30F6FE1F86D252002C5657 /* DCB.swift in Sources */,
 				FC30F6EC1F869732002C5657 /* DataElement.swift in Sources */,
+				FC30F70E1F86D46C002C5657 /* DAD.swift in Sources */,
+				FC30F6F71F86CBE3002C5657 /* NewDataElement.swift in Sources */,
 				FC5334181F867A4F00D546F1 /* Barcode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,11 +375,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC30F72D1F86D4C1002C5657 /* DAQ.swift in Sources */,
+				FC30F7091F86D458002C5657 /* DCS.swift in Sources */,
+				FC30F7241F86D4A7002C5657 /* DAI.swift in Sources */,
+				FC30F7301F86D4CA002C5657 /* DCF.swift in Sources */,
+				FC30F7121F86D473002C5657 /* DBD.swift in Sources */,
+				FC30F7361F86D4D7002C5657 /* DDE.swift in Sources */,
+				FC30F7271F86D4B0002C5657 /* DAJ.swift in Sources */,
+				FC30F73C1F86D4E4002C5657 /* DDG.swift in Sources */,
+				FC30F7211F86D49C002C5657 /* DAG.swift in Sources */,
+				FCDFB1F71F87B167003FBC60 /* DCATests.swift in Sources */,
+				FC30F73E1F86D56A002C5657 /* DCGTests.swift in Sources */,
 				FC30F6EF1F8697CB002C5657 /* DataElementTests.swift in Sources */,
 				FC30F6ED1F869732002C5657 /* DataElement.swift in Sources */,
+				FC30F7331F86D4D0002C5657 /* DCG.swift in Sources */,
+				FC30F7021F86D28D002C5657 /* DCD.swift in Sources */,
+				FC30F72A1F86D4B9002C5657 /* DAK.swift in Sources */,
 				FC30F6EA1F868B04002C5657 /* HeaderTests.swift in Sources */,
+				FC30F6FB1F86CC74002C5657 /* DCA.swift in Sources */,
 				FC53340D1F8679E200D546F1 /* BarcodeTests.swift in Sources */,
+				FC30F71E1F86D495002C5657 /* DAU.swift in Sources */,
+				FC30F7051F86D2BE002C5657 /* DBA.swift in Sources */,
+				FC30F70C1F86D460002C5657 /* DAC.swift in Sources */,
+				FC30F6F21F86C888002C5657 /* DataElementFormatter.swift in Sources */,
+				FC30F7151F86D47D002C5657 /* DBB.swift in Sources */,
+				FC30F7181F86D485002C5657 /* DBC.swift in Sources */,
+				FC30F71B1F86D48E002C5657 /* DAY.swift in Sources */,
+				FC30F7391F86D4DD002C5657 /* DDF.swift in Sources */,
+				FC30F6FF1F86D252002C5657 /* DCB.swift in Sources */,
 				FC30F6E81F868A21002C5657 /* Header.swift in Sources */,
+				FC30F70F1F86D46C002C5657 /* DAD.swift in Sources */,
+				FC30F6F81F86CBE3002C5657 /* NewDataElement.swift in Sources */,
 				FC53341A1F867B3E00D546F1 /* Barcode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +442,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -280,7 +452,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -322,7 +498,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -330,7 +508,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -366,7 +548,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledecot.DriversLicenseBarcodeGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -382,7 +565,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledecot.DriversLicenseBarcodeGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -399,7 +583,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledecot.DriversLicenseBarcodeGeneratorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DriversLicenseBarcodeGenerator.app/Contents/MacOS/DriversLicenseBarcodeGenerator";
 			};
 			name = Debug;
@@ -417,7 +602,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyledecot.DriversLicenseBarcodeGeneratorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DriversLicenseBarcodeGenerator.app/Contents/MacOS/DriversLicenseBarcodeGenerator";
 			};
 			name = Release;
