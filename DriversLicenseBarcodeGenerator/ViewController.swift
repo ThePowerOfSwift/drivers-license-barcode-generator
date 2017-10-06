@@ -147,7 +147,7 @@ class ViewController: NSViewController {
             let transform = CGAffineTransform(scaleX: 3, y: 3)
             
             if let output = filter.outputImage?.transformed(by: transform) {
-                let cgImage = convertCIImageToCGImage(inputImage: output)
+                let cgImage = output.toCGImage()
                 
                 return NSImage(cgImage: cgImage!, size: NSSize(width: 500, height: 100))
             }
@@ -155,10 +155,5 @@ class ViewController: NSViewController {
         
         return nil
     }
-    
-    func convertCIImageToCGImage(inputImage: CIImage) -> CGImage! {
-        return CIContext(options: nil)
-            .createCGImage(inputImage, from: inputImage.extent)
-    }
-}
+ }
 
