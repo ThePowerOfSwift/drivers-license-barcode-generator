@@ -17,7 +17,6 @@ class ViewController: NSViewController {
     @IBOutlet var lastNameTextField: NSTextField!
     
     @IBOutlet var address1TextField: NSTextField!
-    @IBOutlet var address2TextField: NSTextField!
     @IBOutlet var cityTextField: NSTextField!
     @IBOutlet var zipTextField: NSTextField!
     @IBOutlet var statePopupButton: NSPopUpButton!
@@ -45,10 +44,6 @@ class ViewController: NSViewController {
         return address1TextField.stringValue;
     }
     
-    private var address2: String {
-        return address2TextField.stringValue
-    }
-    
     private var city: String {
         return cityTextField.stringValue
     }
@@ -60,6 +55,10 @@ class ViewController: NSViewController {
     
     private var zip: String {
         return zipTextField.stringValue
+    }
+    
+    private var documentExpirationDate: Date {
+        return expirationDatePicker.dateValue
     }
     
     override func viewDidLoad() {
@@ -74,12 +73,21 @@ class ViewController: NSViewController {
         }
     }
 
-    func dataElements() -> [DataElement<DataElementFormatable>] {
-        let jurisdictionSpecificVehicleClass = DCA("D") as DataElement<String>
+    func dataElements() -> [Any] {
+        let jurisdictionSpecificVehicleClass = DCA("D")
+        let jurisdictionSpecificRestrictionCodes = DCB("NONE")
+        let jurisdictionSpecificEndorsementCodes = DCD("NONE")
+        let documentExpirationDate = DBA(self.documentExpirationDate)
+        
+        let customerFirstName = DAC(firstName)
+
         
         return [
             jurisdictionSpecificVehicleClass,
-            DCB("A"),
+            jurisdictionSpecificRestrictionCodes,
+            customerFirstName,
+            jurisdictionSpecificEndorsementCodes,
+            documentExpirationDate,
             DCD("NONE")
         ]
     }

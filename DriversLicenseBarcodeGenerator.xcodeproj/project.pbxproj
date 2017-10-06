@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC16BE261F87F84200065602 /* DataElementFormatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB324951F87E755006AF035 /* DataElementFormatable.swift */; };
+		FC16BE281F87F99900065602 /* DAUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC16BE271F87F99900065602 /* DAUTests.swift */; };
 		FC30F6E71F868A21002C5657 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6E61F868A21002C5657 /* Header.swift */; };
 		FC30F6E81F868A21002C5657 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6E61F868A21002C5657 /* Header.swift */; };
 		FC30F6EA1F868B04002C5657 /* HeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6E91F868B04002C5657 /* HeaderTests.swift */; };
@@ -96,6 +98,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC16BE271F87F99900065602 /* DAUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAUTests.swift; sourceTree = "<group>"; };
 		FC30F6E61F868A21002C5657 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		FC30F6E91F868B04002C5657 /* HeaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTests.swift; sourceTree = "<group>"; };
 		FC30F6EB1F869732002C5657 /* DataElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataElement.swift; sourceTree = "<group>"; };
@@ -168,25 +171,25 @@
 		FC30F6FC1F86D132002C5657 /* Data Elements */ = {
 			isa = PBXGroup;
 			children = (
-				FC30F6F91F86CC74002C5657 /* DCA.swift */,
-				FC30F6FD1F86D252002C5657 /* DCB.swift */,
-				FC30F7001F86D28D002C5657 /* DCD.swift */,
-				FC30F7031F86D2BE002C5657 /* DBA.swift */,
-				FC30F7071F86D458002C5657 /* DCS.swift */,
 				FC30F70A1F86D460002C5657 /* DAC.swift */,
 				FC30F70D1F86D46C002C5657 /* DAD.swift */,
-				FC30F7101F86D473002C5657 /* DBD.swift */,
-				FC30F7131F86D47D002C5657 /* DBB.swift */,
-				FC30F7161F86D485002C5657 /* DBC.swift */,
-				FC30F7191F86D48E002C5657 /* DAY.swift */,
-				FC30F71C1F86D495002C5657 /* DAU.swift */,
 				FC30F71F1F86D49C002C5657 /* DAG.swift */,
 				FC30F7221F86D4A7002C5657 /* DAI.swift */,
 				FC30F7251F86D4B0002C5657 /* DAJ.swift */,
 				FC30F7281F86D4B9002C5657 /* DAK.swift */,
 				FC30F72B1F86D4C1002C5657 /* DAQ.swift */,
+				FC30F71C1F86D495002C5657 /* DAU.swift */,
+				FC30F7191F86D48E002C5657 /* DAY.swift */,
+				FC30F7031F86D2BE002C5657 /* DBA.swift */,
+				FC30F7131F86D47D002C5657 /* DBB.swift */,
+				FC30F7161F86D485002C5657 /* DBC.swift */,
+				FC30F7101F86D473002C5657 /* DBD.swift */,
+				FC30F6F91F86CC74002C5657 /* DCA.swift */,
+				FC30F6FD1F86D252002C5657 /* DCB.swift */,
+				FC30F7001F86D28D002C5657 /* DCD.swift */,
 				FC30F72E1F86D4CA002C5657 /* DCF.swift */,
 				FC30F7311F86D4D0002C5657 /* DCG.swift */,
+				FC30F7071F86D458002C5657 /* DCS.swift */,
 				FC30F7341F86D4D7002C5657 /* DDE.swift */,
 				FC30F7371F86D4DD002C5657 /* DDF.swift */,
 				FC30F73A1F86D4E4002C5657 /* DDG.swift */,
@@ -197,9 +200,10 @@
 		FC30F73F1F86D56E002C5657 /* Data Elements */ = {
 			isa = PBXGroup;
 			children = (
-				FC30F73D1F86D56A002C5657 /* DCGTests.swift */,
-				FCDFB1F61F87B167003FBC60 /* DCATests.swift */,
 				FCB324991F87E88F006AF035 /* DDETests.swift */,
+				FC16BE271F87F99900065602 /* DAUTests.swift */,
+				FCDFB1F61F87B167003FBC60 /* DCATests.swift */,
+				FC30F73D1F86D56A002C5657 /* DCGTests.swift */,
 			);
 			name = "Data Elements";
 			sourceTree = "<group>";
@@ -423,6 +427,7 @@
 				FC30F7271F86D4B0002C5657 /* DAJ.swift in Sources */,
 				FCB324941F87D59A006AF035 /* DataElementLengthTypeTests.swift in Sources */,
 				FC30F73C1F86D4E4002C5657 /* DDG.swift in Sources */,
+				FC16BE261F87F84200065602 /* DataElementFormatable.swift in Sources */,
 				FC30F7211F86D49C002C5657 /* DAG.swift in Sources */,
 				FCDFB1F71F87B167003FBC60 /* DCATests.swift in Sources */,
 				FC30F73E1F86D56A002C5657 /* DCGTests.swift in Sources */,
@@ -441,6 +446,7 @@
 				FC30F6F21F86C888002C5657 /* DataElementFormatter.swift in Sources */,
 				FC30F7151F86D47D002C5657 /* DBB.swift in Sources */,
 				FC30F7181F86D485002C5657 /* DBC.swift in Sources */,
+				FC16BE281F87F99900065602 /* DAUTests.swift in Sources */,
 				FC30F71B1F86D48E002C5657 /* DAY.swift in Sources */,
 				FC30F7391F86D4DD002C5657 /* DDF.swift in Sources */,
 				FC30F6FF1F86D252002C5657 /* DCB.swift in Sources */,

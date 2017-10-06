@@ -1,7 +1,6 @@
 import XCTest
 
 class DCATests: XCTestCase {
-    
     func testFormatWithoutTruncation() {
         let dataElement = DCA("D")
         
@@ -14,6 +13,5 @@ class DCATests: XCTestCase {
 //
 //        XCTAssertEqual(dataElement.format(), "DCAABCDEF")
 //    }
-    
 }
 
