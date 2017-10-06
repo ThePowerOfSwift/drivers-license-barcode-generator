@@ -1,6 +1,6 @@
 import Foundation
 
-class DCG: NewDataElement<DataElement.CountryIdentificationCode> {
+class DCG: DataElement<DataElementCountryIdentificationCode> {
 //    static var cardType: DataElement.CardType {
 //        return .Both
 //    }

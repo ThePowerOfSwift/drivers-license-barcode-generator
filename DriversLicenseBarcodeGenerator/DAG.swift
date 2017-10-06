@@ -1,6 +1,6 @@
 import Foundation
 
-class DAG: NewDataElement<String> {
+class DAG: DataElement<String> {
 //    static var cardType: DataElement.CardType {
 //        return .Both
 //    }

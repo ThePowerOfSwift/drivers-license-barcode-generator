@@ -15,8 +15,6 @@
 		FC30F6EF1F8697CB002C5657 /* DataElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6EE1F8697CB002C5657 /* DataElementTests.swift */; };
 		FC30F6F11F86C888002C5657 /* DataElementFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6F01F86C888002C5657 /* DataElementFormatter.swift */; };
 		FC30F6F21F86C888002C5657 /* DataElementFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6F01F86C888002C5657 /* DataElementFormatter.swift */; };
-		FC30F6F71F86CBE3002C5657 /* NewDataElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6F61F86CBE3002C5657 /* NewDataElement.swift */; };
-		FC30F6F81F86CBE3002C5657 /* NewDataElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6F61F86CBE3002C5657 /* NewDataElement.swift */; };
 		FC30F6FA1F86CC74002C5657 /* DCA.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6F91F86CC74002C5657 /* DCA.swift */; };
 		FC30F6FB1F86CC74002C5657 /* DCA.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6F91F86CC74002C5657 /* DCA.swift */; };
 		FC30F6FE1F86D252002C5657 /* DCB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6FD1F86D252002C5657 /* DCB.swift */; };
@@ -70,6 +68,11 @@
 		FC53340D1F8679E200D546F1 /* BarcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53340C1F8679E200D546F1 /* BarcodeTests.swift */; };
 		FC5334181F867A4F00D546F1 /* Barcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5334171F867A4F00D546F1 /* Barcode.swift */; };
 		FC53341A1F867B3E00D546F1 /* Barcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5334171F867A4F00D546F1 /* Barcode.swift */; };
+		FCC6175E1F87CDE8002820C5 /* DataElementTruncation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6175D1F87CDE8002820C5 /* DataElementTruncation.swift */; };
+		FCC617601F87CE29002820C5 /* DataElementCountryIdentificationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6175F1F87CE29002820C5 /* DataElementCountryIdentificationCode.swift */; };
+		FCC617621F87CE40002820C5 /* DataElementGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC617611F87CE40002820C5 /* DataElementGender.swift */; };
+		FCC617641F87CE53002820C5 /* DataElementCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC617631F87CE53002820C5 /* DataElementCardType.swift */; };
+		FCC617661F87CE6B002820C5 /* DataElementLengthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC617651F87CE6B002820C5 /* DataElementLengthType.swift */; };
 		FCDFB1F71F87B167003FBC60 /* DCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDFB1F61F87B167003FBC60 /* DCATests.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,7 +92,6 @@
 		FC30F6EB1F869732002C5657 /* DataElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataElement.swift; sourceTree = "<group>"; };
 		FC30F6EE1F8697CB002C5657 /* DataElementTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataElementTests.swift; sourceTree = "<group>"; };
 		FC30F6F01F86C888002C5657 /* DataElementFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataElementFormatter.swift; sourceTree = "<group>"; };
-		FC30F6F61F86CBE3002C5657 /* NewDataElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDataElement.swift; sourceTree = "<group>"; };
 		FC30F6F91F86CC74002C5657 /* DCA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCA.swift; sourceTree = "<group>"; };
 		FC30F6FD1F86D252002C5657 /* DCB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCB.swift; sourceTree = "<group>"; };
 		FC30F7001F86D28D002C5657 /* DCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCD.swift; sourceTree = "<group>"; };
@@ -124,6 +126,11 @@
 		FC53340C1F8679E200D546F1 /* BarcodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeTests.swift; sourceTree = "<group>"; };
 		FC53340E1F8679E200D546F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC5334171F867A4F00D546F1 /* Barcode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Barcode.swift; sourceTree = "<group>"; };
+		FCC6175D1F87CDE8002820C5 /* DataElementTruncation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataElementTruncation.swift; sourceTree = "<group>"; };
+		FCC6175F1F87CE29002820C5 /* DataElementCountryIdentificationCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataElementCountryIdentificationCode.swift; sourceTree = "<group>"; };
+		FCC617611F87CE40002820C5 /* DataElementGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataElementGender.swift; sourceTree = "<group>"; };
+		FCC617631F87CE53002820C5 /* DataElementCardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataElementCardType.swift; sourceTree = "<group>"; };
+		FCC617651F87CE6B002820C5 /* DataElementLengthType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataElementLengthType.swift; sourceTree = "<group>"; };
 		FCDFB1F61F87B167003FBC60 /* DCATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCATests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,9 +220,13 @@
 				FC5334171F867A4F00D546F1 /* Barcode.swift */,
 				FC30F6E61F868A21002C5657 /* Header.swift */,
 				FC30F6EB1F869732002C5657 /* DataElement.swift */,
-				FC30F6F61F86CBE3002C5657 /* NewDataElement.swift */,
+				FCC6175F1F87CE29002820C5 /* DataElementCountryIdentificationCode.swift */,
+				FCC617611F87CE40002820C5 /* DataElementGender.swift */,
+				FCC617631F87CE53002820C5 /* DataElementCardType.swift */,
+				FCC617651F87CE6B002820C5 /* DataElementLengthType.swift */,
 				FC30F6F01F86C888002C5657 /* DataElementFormatter.swift */,
 				FC30F6FC1F86D132002C5657 /* Data Elements */,
+				FCC6175D1F87CDE8002820C5 /* DataElementTruncation.swift */,
 			);
 			path = DriversLicenseBarcodeGenerator;
 			sourceTree = "<group>";
@@ -339,15 +350,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC30F72C1F86D4C1002C5657 /* DAQ.swift in Sources */,
+				FCC617641F87CE53002820C5 /* DataElementCardType.swift in Sources */,
 				FC30F7081F86D458002C5657 /* DCS.swift in Sources */,
 				FC30F7231F86D4A7002C5657 /* DAI.swift in Sources */,
 				FC30F72F1F86D4CA002C5657 /* DCF.swift in Sources */,
 				FC30F7111F86D473002C5657 /* DBD.swift in Sources */,
 				FC30F7351F86D4D7002C5657 /* DDE.swift in Sources */,
 				FC30F7261F86D4B0002C5657 /* DAJ.swift in Sources */,
+				FCC6175E1F87CDE8002820C5 /* DataElementTruncation.swift in Sources */,
 				FC30F73B1F86D4E4002C5657 /* DDG.swift in Sources */,
 				FC30F7201F86D49C002C5657 /* DAG.swift in Sources */,
 				FC30F6E71F868A21002C5657 /* Header.swift in Sources */,
+				FCC617621F87CE40002820C5 /* DataElementGender.swift in Sources */,
 				FC5333FB1F8679E200D546F1 /* ViewController.swift in Sources */,
 				FC30F7321F86D4D0002C5657 /* DCG.swift in Sources */,
 				FC30F7011F86D28D002C5657 /* DCD.swift in Sources */,
@@ -357,7 +371,9 @@
 				FC5333FD1F8679E200D546F1 /* Document.swift in Sources */,
 				FC30F71D1F86D495002C5657 /* DAU.swift in Sources */,
 				FC30F7041F86D2BE002C5657 /* DBA.swift in Sources */,
+				FCC617601F87CE29002820C5 /* DataElementCountryIdentificationCode.swift in Sources */,
 				FC30F70B1F86D460002C5657 /* DAC.swift in Sources */,
+				FCC617661F87CE6B002820C5 /* DataElementLengthType.swift in Sources */,
 				FC30F6F11F86C888002C5657 /* DataElementFormatter.swift in Sources */,
 				FC30F7141F86D47D002C5657 /* DBB.swift in Sources */,
 				FC30F7171F86D485002C5657 /* DBC.swift in Sources */,
@@ -366,7 +382,6 @@
 				FC30F6FE1F86D252002C5657 /* DCB.swift in Sources */,
 				FC30F6EC1F869732002C5657 /* DataElement.swift in Sources */,
 				FC30F70E1F86D46C002C5657 /* DAD.swift in Sources */,
-				FC30F6F71F86CBE3002C5657 /* NewDataElement.swift in Sources */,
 				FC5334181F867A4F00D546F1 /* Barcode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,7 +420,6 @@
 				FC30F6FF1F86D252002C5657 /* DCB.swift in Sources */,
 				FC30F6E81F868A21002C5657 /* Header.swift in Sources */,
 				FC30F70F1F86D46C002C5657 /* DAD.swift in Sources */,
-				FC30F6F81F86CBE3002C5657 /* NewDataElement.swift in Sources */,
 				FC53341A1F867B3E00D546F1 /* Barcode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,6 +1,6 @@
 import Foundation
 
-class DBC: NewDataElement<DataElement.Gender> {
+class DBC: DataElement<DataElementGender> {
 //    static var cardType: DataElement.CardType {
 //        return .Both
 //    }

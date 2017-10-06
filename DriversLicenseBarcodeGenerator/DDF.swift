@@ -1,6 +1,6 @@
 import Foundation
 
-class DDF: NewDataElement<DataElement.Truncation> {
+class DDF: DataElement<DataElementTruncation> {
 //    static var cardType: DataElement.CardType {
 //        return .Both
 //    }

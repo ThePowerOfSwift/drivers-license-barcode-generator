@@ -1,6 +1,6 @@
 import Foundation
 
-class DCD: NewDataElement<String> {
+class DCD: DataElement<String> {
 //    static var cardType: DataElement.CardType {
 //        return .DL
 //    }

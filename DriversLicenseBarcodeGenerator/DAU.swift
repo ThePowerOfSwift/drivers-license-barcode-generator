@@ -1,6 +1,6 @@
 import Foundation
 
-class DAU: NewDataElement<Int> {
+class DAU: DataElement<Int> {
 //    static var cardType: DataElement.CardType {
 //        return .Both
 //    }

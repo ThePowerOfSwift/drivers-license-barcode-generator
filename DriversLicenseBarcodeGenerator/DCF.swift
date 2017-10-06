@@ -1,6 +1,6 @@
 import Foundation
 
-class DCF: NewDataElement<String> {
+class DCF: DataElement<String> {
 //    static var cardType: DataElement.CardType {
 //        return .Both
 //    }

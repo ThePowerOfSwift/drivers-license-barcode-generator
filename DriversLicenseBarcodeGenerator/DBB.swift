@@ -1,6 +1,6 @@
 import Foundation
 
-class DBB: NewDataElement<Date> {
+class DBB: DataElement<Date> {
 //    static var cardType: DataElement.CardType {
 //        return .Both
 //    }

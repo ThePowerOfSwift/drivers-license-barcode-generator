@@ -1,6 +1,6 @@
 import Foundation
 
-class DAQ: NewDataElement<String> {
+class DAQ: DataElement<String> {
 //    static var cardType: DataElement.CardType {
 //        return .Both
 //    }

@@ -1,7 +1,7 @@
 import Foundation
 
 class DataElementFormatter {
-    static func formatString(string: String) -> String {
+    static func formatString(string: String, lengthType: DataElementLengthType) -> String {
         return "TODO"
     }
     

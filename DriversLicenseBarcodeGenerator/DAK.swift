@@ -1,6 +1,6 @@
 import Foundation
 
-class DAK: NewDataElement<String> {
+class DAK: DataElement<String> {
 //    static var cardType: DataElement.CardType {
 //        return .Both
 //    }

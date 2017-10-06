@@ -1,6 +1,6 @@
 import Foundation
 
-class DAI: NewDataElement<String> {
+class DAI: DataElement<String> {
 //    static var cardType: DataElement.CardType {
 //        return .Both
 //    }

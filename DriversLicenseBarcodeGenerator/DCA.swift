@@ -1,13 +1,10 @@
 import Foundation
 
-class DCA: NewDataElement<String> {
-//    static let cardType: DataElement.CardType = .DL
-//
-//    static var lengthType: String {
-//        return "V6ANS"
-//    }
+class DCA: DataElement<String> {
+    static let lengthType = DataElementLengthType("V6ANS")
+    static let cardType = DataElementCardType.DL
     
     override func format() -> String {
-        return "DCA\(data)"
+        return DataElementFormatter.formatString(string: data, lengthType: DCA.lengthType)
     }
 }

@@ -2,7 +2,7 @@ import Foundation
 
 // TODO: Make Eye color a enum
 
-class DAY: NewDataElement<String> {
+class DAY: DataElement<String> {
 //    static var cardType: DataElement.CardType {
 //        return .Both
 //    }
