@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		FC16BE261F87F84200065602 /* DataElementFormatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB324951F87E755006AF035 /* DataElementFormatable.swift */; };
 		FC16BE281F87F99900065602 /* DAUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC16BE271F87F99900065602 /* DAUTests.swift */; };
+		FC16BE2A1F87FA4300065602 /* DCSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC16BE291F87FA4300065602 /* DCSTests.swift */; };
+		FC16BE2C1F87FABB00065602 /* DACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC16BE2B1F87FABB00065602 /* DACTests.swift */; };
+		FC16BE2E1F87FAF500065602 /* DADTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC16BE2D1F87FAF500065602 /* DADTests.swift */; };
 		FC30F6E71F868A21002C5657 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6E61F868A21002C5657 /* Header.swift */; };
 		FC30F6E81F868A21002C5657 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6E61F868A21002C5657 /* Header.swift */; };
 		FC30F6EA1F868B04002C5657 /* HeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6E91F868B04002C5657 /* HeaderTests.swift */; };
@@ -99,6 +102,9 @@
 
 /* Begin PBXFileReference section */
 		FC16BE271F87F99900065602 /* DAUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAUTests.swift; sourceTree = "<group>"; };
+		FC16BE291F87FA4300065602 /* DCSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCSTests.swift; sourceTree = "<group>"; };
+		FC16BE2B1F87FABB00065602 /* DACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DACTests.swift; sourceTree = "<group>"; };
+		FC16BE2D1F87FAF500065602 /* DADTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DADTests.swift; sourceTree = "<group>"; };
 		FC30F6E61F868A21002C5657 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		FC30F6E91F868B04002C5657 /* HeaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTests.swift; sourceTree = "<group>"; };
 		FC30F6EB1F869732002C5657 /* DataElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataElement.swift; sourceTree = "<group>"; };
@@ -204,6 +210,9 @@
 				FC16BE271F87F99900065602 /* DAUTests.swift */,
 				FCDFB1F61F87B167003FBC60 /* DCATests.swift */,
 				FC30F73D1F86D56A002C5657 /* DCGTests.swift */,
+				FC16BE291F87FA4300065602 /* DCSTests.swift */,
+				FC16BE2B1F87FABB00065602 /* DACTests.swift */,
+				FC16BE2D1F87FAF500065602 /* DADTests.swift */,
 			);
 			name = "Data Elements";
 			sourceTree = "<group>";
@@ -414,6 +423,7 @@
 			files = (
 				FC30F72D1F86D4C1002C5657 /* DAQ.swift in Sources */,
 				FC30F7091F86D458002C5657 /* DCS.swift in Sources */,
+				FC16BE2A1F87FA4300065602 /* DCSTests.swift in Sources */,
 				FCB324911F87D525006AF035 /* DataElementCountryIdentificationCode.swift in Sources */,
 				FCB324901F87D4B1006AF035 /* DataElementLengthType.swift in Sources */,
 				FC30F7241F86D4A7002C5657 /* DAI.swift in Sources */,
@@ -432,11 +442,13 @@
 				FCDFB1F71F87B167003FBC60 /* DCATests.swift in Sources */,
 				FC30F73E1F86D56A002C5657 /* DCGTests.swift in Sources */,
 				FC30F6EF1F8697CB002C5657 /* DataElementTests.swift in Sources */,
+				FC16BE2E1F87FAF500065602 /* DADTests.swift in Sources */,
 				FC30F6ED1F869732002C5657 /* DataElement.swift in Sources */,
 				FC30F7331F86D4D0002C5657 /* DCG.swift in Sources */,
 				FC30F7021F86D28D002C5657 /* DCD.swift in Sources */,
 				FC30F72A1F86D4B9002C5657 /* DAK.swift in Sources */,
 				FC30F6EA1F868B04002C5657 /* HeaderTests.swift in Sources */,
+				FC16BE2C1F87FABB00065602 /* DACTests.swift in Sources */,
 				FC30F6FB1F86CC74002C5657 /* DCA.swift in Sources */,
 				FCB3248F1F87D4B0006AF035 /* DataElementCardType.swift in Sources */,
 				FC53340D1F8679E200D546F1 /* BarcodeTests.swift in Sources */,
