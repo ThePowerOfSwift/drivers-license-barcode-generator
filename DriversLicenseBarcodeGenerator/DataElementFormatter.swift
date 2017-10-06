@@ -16,4 +16,8 @@ class DataElementFormatter {
     static func formatDate(date: Date) -> String {
         return dateFormatter.string(from: date)
     }
+    
+    static func formatPostalCode(postalCode: String) -> String {
+        return postalCode.padding(toLength: 9, withPad: "0", startingAt: 0)
+    }
 }

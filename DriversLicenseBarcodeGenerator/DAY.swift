@@ -1,9 +1,7 @@
 import Foundation
 
-// TODO: Make Eye color a enum
-
-class DAY: DataElement<String>, DataElementFormatable {
+class DAY: DataElement<DataElementEyeColor>, DataElementFormatable {
     func format() -> String {
-        return "DAY\(DataElementFormatter.formatString(data, length: 6))"
+        return "DAY\(DataElementFormatter.formatString(data.rawValue, length: 3))"
     }
 }

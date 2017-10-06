@@ -1,15 +1,15 @@
-//
-//  HeaderTests.swift
-//  DriversLicenseBarcodeGenerator
-//
-//  Created by Kyle Decot on 10/5/17.
-//  Copyright © 2017 Kyle Decot. All rights reserved.
-//
-
 import XCTest
 
 class HeaderTests: XCTestCase {
     func testDescription() {
-        // TODO
+        let expected = """
+        @
+        
+        ANSI 123456789
+        """
+        
+        let header = Header(issuerIdentificationNumber: "1234", AAMVAVersionNumber: "56", jurisdictionVersionNumber: "78", numberOfEntries: "9")
+        
+        XCTAssertEqual(header.description, expected)
     }
 }

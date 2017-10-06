@@ -1,15 +1,19 @@
-//
-//  DriversLicenseBarcodeGeneratorTests.swift
-//  DriversLicenseBarcodeGeneratorTests
-//
-//  Created by Kyle Decot on 10/5/17.
-//  Copyright © 2017 Kyle Decot. All rights reserved.
-//
-
 import XCTest
 @testable import DriversLicenseBarcodeGenerator
 
 class BarcodeTests: XCTestCase {
+    let jurisdictionSpecificVehicleClass = DCA("D")
+    let jurisdictionSpecificRestrictionCodes = DCB("A")
+    let jurisdictionSpecificEndorsementCodes = DCD("NONE")
+    let documentExpirationDate = DBA(buildDate(year: 2019, month: 9, day: 14))
+    let customerFamilyName = DCS("DECOT")
+    let customerFirstName = DAC("KYLE")
+    let customerMiddleNames = DAD(["BRANDON"])
+    let documentIssueDate = DBD(buildDate(year: 2015, month: 10, day: 3))
+    let dateOfBirth = DBB(buildDate(year: 1986, month: 9, day: 14))
+    let physicalDescriptionSex = DBC(.Male)
+    let physicalDescriptionEyeColor = DAY(.Hazel)
+    
     func testComplianceIndicator() {
         XCTAssertEqual(Barcode.complianceIndicator, "\u{40}");
     }
@@ -30,19 +34,27 @@ class BarcodeTests: XCTestCase {
         XCTAssertEqual(Barcode.fileType, "ANSI ")
     }
     
-    func testAAMVAVersionNumber() {
-        XCTAssertEqual(Barcode.AAMVAVersionNumber, "08")
-    }
-    
-    func testJurisdictionVersionNumber() {
-        XCTAssertEqual(Barcode.jurisdictionVersionNumber, "00")
-    }
-    
     func testDescription() {
+//        DCS("DECOT"),
+//        customerFirstName,
+//        DAD("BRANDON"),
+//        DBD(buildDate(year: 2015, month: 10, day: 3)),
+//        ,
+//        DBC(.Male),
+//        DAY(.Hazel),
+//        DAU(70)
+        
         let barcode = Barcode(dataElements: [
-            DCS("KYLE"),
-            DAU(70),
-        ])
+            jurisdictionSpecificVehicleClass,
+            jurisdictionSpecificRestrictionCodes,
+            jurisdictionSpecificEndorsementCodes,
+            documentExpirationDate,
+            customerFamilyName,
+            customerFirstName,
+            customerMiddleNames,
+            physicalDescriptionSex,
+            physicalDescriptionEyeColor
+            ], issuerIdentificationNumber: "636000", AAMVAVersionNumber: "00", jurisdictionVersionNumber: "00")
         
         let expected = """
         @
@@ -83,6 +95,17 @@ class BarcodeTests: XCTestCase {
         """
         
         XCTAssertEqual(barcode.description, expected)
+    }
+    
+    private static func buildDate(year: Int, month: Int, day: Int) -> Date! {
+        let calendar = NSCalendar.current
+
+        var dateComponents = DateComponents()
+        dateComponents.year = 2019
+        dateComponents.month = 9
+        dateComponents.day = 14
+
+        return calendar.date(from: dateComponents as DateComponents)!
     }
 }
 

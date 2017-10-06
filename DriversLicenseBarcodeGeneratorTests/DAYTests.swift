@@ -1,12 +1,12 @@
 import XCTest
 
-class DADTests: XCTestCase {
-    var dataElement: DAD!
+class DAYTests: XCTestCase {
+    var dataElement: DAY!
     
     override func setUp() {
         super.setUp()
         
-        dataElement = DAD(["BRANDON"])
+        dataElement = DAY(.Hazel)
     }
     
     override func tearDown() {
@@ -16,6 +16,9 @@ class DADTests: XCTestCase {
     }
     
     func testFormat() {
-        XCTAssertEqual(dataElement.format(), "DADBRANDON")
+        XCTAssertEqual(dataElement.format(), "DAYHAZ")
     }
 }
+
+
+

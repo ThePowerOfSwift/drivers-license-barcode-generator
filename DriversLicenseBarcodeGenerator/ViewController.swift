@@ -27,6 +27,10 @@ class ViewController: NSViewController {
     @IBOutlet var sexPopupButton: NSPopUpButton!
     @IBOutlet var eyeColor: NSPopUpButton!
     @IBOutlet var customerIDNumberTextField: NSTextField!
+    
+    @IBOutlet var jurisdictionSpecificVehicleClassTextField: NSTextField!
+    @IBOutlet var jurisdictionSpecificEndorsementCodesTextField: NSTextField!
+    @IBOutlet var jurisdictionSpecificRestrictionCodesTextField: NSTextField!
 
     private var firstName: String {
         return firstNameTextField.stringValue
@@ -48,9 +52,21 @@ class ViewController: NSViewController {
         return cityTextField.stringValue
     }
     
+    private var jurisdictionSpecificEndorsementCodes: String {
+        return jurisdictionSpecificEndorsementCodesTextField.stringValue
+    }
+    
+    private var jurisdictionSpecificRestrictionCodes: String {
+        return jurisdictionSpecificEndorsementCodesTextField.stringValue
+    }
+    
     private var state: String {
         return "OH"
 //        return statePopupButton.selectedItem!.tag // TODO: How do you get the value of a popup?
+    }
+    
+    private var jurisdictionSpecificVehicleClass: String {
+        return jurisdictionSpecificVehicleClassTextField.stringValue
     }
     
     private var zip: String {
@@ -59,6 +75,37 @@ class ViewController: NSViewController {
     
     private var documentExpirationDate: Date {
         return expirationDatePicker.dateValue
+    }
+    
+    private var documentIssueDate: Date {
+        return issueDatePicker.dateValue;
+    }
+    
+    private var addressPostalCode: String {
+        return zipTextField.stringValue
+    }
+    
+    var dataElements:[Any] {
+        let jurisdictionSpecificVehicleClass = DCA(self.jurisdictionSpecificVehicleClass)
+        let jurisdictionSpecificRestrictionCodes = DCB("NONE")
+        let jurisdictionSpecificEndorsementCodes = DCD(self.jurisdictionSpecificEndorsementCodes)
+        let documentExpirationDate = DBA(self.documentExpirationDate)
+        let customerMiddleNames = DAD([middleName])
+        let customerFamilyName = DCS(lastName)
+        let customerFirstName = DAC(firstName)
+        let documentIssueDate = DBD(self.documentIssueDate)
+        let addressPostalCode = DAK(self.addressPostalCode)
+        
+        return [
+            jurisdictionSpecificVehicleClass,
+            jurisdictionSpecificRestrictionCodes,
+            customerFirstName,
+            customerMiddleNames,
+            customerFamilyName,
+            jurisdictionSpecificEndorsementCodes,
+            documentIssueDate,
+            documentExpirationDate,
+        ]
     }
     
     override func viewDidLoad() {
@@ -73,57 +120,14 @@ class ViewController: NSViewController {
         }
     }
 
-    func dataElements() -> [Any] {
-        let jurisdictionSpecificVehicleClass = DCA("D")
-        let jurisdictionSpecificRestrictionCodes = DCB("NONE")
-        let jurisdictionSpecificEndorsementCodes = DCD("NONE")
-        let documentExpirationDate = DBA(self.documentExpirationDate)
-        
-        let customerFirstName = DAC(firstName)
-
-        
-        return [
-            jurisdictionSpecificVehicleClass,
-            jurisdictionSpecificRestrictionCodes,
-            customerFirstName,
-            jurisdictionSpecificEndorsementCodes,
-            documentExpirationDate,
-            DCD("NONE")
-        ]
-    }
-
     // MARK: - Actions
     
-    
     @IBAction func generate(sender: Any) {
-        let barcode = Barcode(dataElements: dataElements())
-//
-//        barcode.jurisdictionSpecificVehicleClass = DataElement.DCA("D")
-//        barcode.jurisdictionSpecificRestrictionCodes = DataElement.DCB("A")
-//        barcode.jurisdictionSpecificEndorsementCodes = DataElement.DCD("NONE")
-//        barcode.documentExpirationDate = DataElement.DBA(buildDate(year: 2019, month: 9, day: 14))
-//        barcode.customerFamilyName = DataElement.DCS(lastName)
-//        barcode.customerFirstName = DataElement.DAC(firstName)
-//        barcode.customerMiddleNames = DataElement.DAD([middleName])
-//        barcode.documentIssueDate = DataElement.DBD(buildDate(year: 2015, month: 10, day: 3))
-//        barcode.dateOfBirth = DataElement.DBB(buildDate(year: 1986, month: 9, day: 14))
-//        barcode.physicalDescriptionSex = DataElement.DBC(1)
-//        barcode.physicalDescriptionEyeColor = DataElement.DAY("HAZ")
-//        barcode.phsyicalDescriptionHeight = DataElement.DAU(70) // TODO: This needs to be formatted as "70 IN" when encoding
-//        barcode.addressStreet1 = DataElement.DAG(address1)
-//        barcode.addressCity = DataElement.DAI(city)
-//        barcode.addressJurisdictionCode = DataElement.DAJ(state)
-//        barcode.addressPostalCode = DataElement.DAK("432122152")
-//        barcode.customerIDNumber = DataElement.DAQ("SS430403")
-//        barcode.documentDiscriminator = DataElement.DCF("2509UN6813300000")
-//        barcode.countryIdentification = DataElement.DCG("USA")
-//        barcode.familyNameTruncation = DataElement.DDE(.No)
-//        barcode.firstNameTruncation = DataElement.DDF(.No)
-//        barcode.middleNameTruncation = DataElement.DDG(.No)
-//        
+        let barcode = Barcode(dataElements: dataElements, issuerIdentificationNumber: "636000", AAMVAVersionNumber: "00", jurisdictionVersionNumber: "00")
+
         if let image = generatePDF417Barcode(from: barcode) {
             imageView.image = image
-            print(barcode)
+
         }
     }
     

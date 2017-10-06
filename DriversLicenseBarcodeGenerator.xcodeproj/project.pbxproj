@@ -15,6 +15,10 @@
 		FC16BE301F87FB5900065602 /* DBDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC16BE2F1F87FB5900065602 /* DBDTests.swift */; };
 		FC16BE351F87FFA500065602 /* DBBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC16BE341F87FFA500065602 /* DBBTests.swift */; };
 		FC16BE371F88000C00065602 /* DBCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC16BE361F88000C00065602 /* DBCTests.swift */; };
+		FC16BE391F88008B00065602 /* DAYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC16BE381F88008B00065602 /* DAYTests.swift */; };
+		FC16BE3B1F8800BD00065602 /* DataElementEyeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC16BE3A1F8800BD00065602 /* DataElementEyeColor.swift */; };
+		FC16BE3C1F8801CB00065602 /* DataElementEyeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC16BE3A1F8800BD00065602 /* DataElementEyeColor.swift */; };
+		FC16BE3E1F8819A100065602 /* DAKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC16BE3D1F8819A100065602 /* DAKTests.swift */; };
 		FC30F6E71F868A21002C5657 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6E61F868A21002C5657 /* Header.swift */; };
 		FC30F6E81F868A21002C5657 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6E61F868A21002C5657 /* Header.swift */; };
 		FC30F6EA1F868B04002C5657 /* HeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC30F6E91F868B04002C5657 /* HeaderTests.swift */; };
@@ -111,6 +115,9 @@
 		FC16BE2F1F87FB5900065602 /* DBDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBDTests.swift; sourceTree = "<group>"; };
 		FC16BE341F87FFA500065602 /* DBBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBBTests.swift; sourceTree = "<group>"; };
 		FC16BE361F88000C00065602 /* DBCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBCTests.swift; sourceTree = "<group>"; };
+		FC16BE381F88008B00065602 /* DAYTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAYTests.swift; sourceTree = "<group>"; };
+		FC16BE3A1F8800BD00065602 /* DataElementEyeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataElementEyeColor.swift; sourceTree = "<group>"; };
+		FC16BE3D1F8819A100065602 /* DAKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAKTests.swift; sourceTree = "<group>"; };
 		FC30F6E61F868A21002C5657 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		FC30F6E91F868B04002C5657 /* HeaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTests.swift; sourceTree = "<group>"; };
 		FC30F6EB1F869732002C5657 /* DataElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataElement.swift; sourceTree = "<group>"; };
@@ -222,6 +229,8 @@
 				FC16BE2F1F87FB5900065602 /* DBDTests.swift */,
 				FC16BE341F87FFA500065602 /* DBBTests.swift */,
 				FC16BE361F88000C00065602 /* DBCTests.swift */,
+				FC16BE381F88008B00065602 /* DAYTests.swift */,
+				FC16BE3D1F8819A100065602 /* DAKTests.swift */,
 			);
 			name = "Data Elements";
 			sourceTree = "<group>";
@@ -264,6 +273,7 @@
 				FCC6175D1F87CDE8002820C5 /* DataElementTruncation.swift */,
 				FC30F6FC1F86D132002C5657 /* Data Elements */,
 				FCB324951F87E755006AF035 /* DataElementFormatable.swift */,
+				FC16BE3A1F8800BD00065602 /* DataElementEyeColor.swift */,
 			);
 			path = DriversLicenseBarcodeGenerator;
 			sourceTree = "<group>";
@@ -398,6 +408,7 @@
 				FC30F7351F86D4D7002C5657 /* DDE.swift in Sources */,
 				FC30F7261F86D4B0002C5657 /* DAJ.swift in Sources */,
 				FCC6175E1F87CDE8002820C5 /* DataElementTruncation.swift in Sources */,
+				FC16BE3B1F8800BD00065602 /* DataElementEyeColor.swift in Sources */,
 				FC30F73B1F86D4E4002C5657 /* DDG.swift in Sources */,
 				FC30F7201F86D49C002C5657 /* DAG.swift in Sources */,
 				FC30F6E71F868A21002C5657 /* Header.swift in Sources */,
@@ -432,6 +443,7 @@
 			files = (
 				FC30F72D1F86D4C1002C5657 /* DAQ.swift in Sources */,
 				FC30F7091F86D458002C5657 /* DCS.swift in Sources */,
+				FC16BE3C1F8801CB00065602 /* DataElementEyeColor.swift in Sources */,
 				FC16BE2A1F87FA4300065602 /* DCSTests.swift in Sources */,
 				FCB324911F87D525006AF035 /* DataElementCountryIdentificationCode.swift in Sources */,
 				FCB324901F87D4B1006AF035 /* DataElementLengthType.swift in Sources */,
@@ -440,6 +452,7 @@
 				FC30F7121F86D473002C5657 /* DBD.swift in Sources */,
 				FCB3249A1F87E88F006AF035 /* DDETests.swift in Sources */,
 				FCB3248D1F87D40A006AF035 /* DataElementFormatterTests.swift in Sources */,
+				FC16BE391F88008B00065602 /* DAYTests.swift in Sources */,
 				FC30F7361F86D4D7002C5657 /* DDE.swift in Sources */,
 				FC16BE301F87FB5900065602 /* DBDTests.swift in Sources */,
 				FCB3248E1F87D4AE006AF035 /* DataElementGender.swift in Sources */,
@@ -454,6 +467,7 @@
 				FC30F73E1F86D56A002C5657 /* DCGTests.swift in Sources */,
 				FC30F6EF1F8697CB002C5657 /* DataElementTests.swift in Sources */,
 				FC16BE2E1F87FAF500065602 /* DADTests.swift in Sources */,
+				FC16BE3E1F8819A100065602 /* DAKTests.swift in Sources */,
 				FC30F6ED1F869732002C5657 /* DataElement.swift in Sources */,
 				FC30F7331F86D4D0002C5657 /* DCG.swift in Sources */,
 				FC30F7021F86D28D002C5657 /* DCD.swift in Sources */,

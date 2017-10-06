@@ -715,14 +715,13 @@
                                         </customSpacing>
                                     </stackView>
                                     <scrollView autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6x-1t-KBb">
-                                        <rect key="frame" x="680" y="37" width="212" height="721"/>
+                                        <rect key="frame" x="0.0" y="37" width="892" height="721"/>
                                         <clipView key="contentView" id="3m3-rH-AkQ">
-                                            <rect key="frame" x="1" y="1" width="210" height="719"/>
+                                            <rect key="frame" x="1" y="1" width="890" height="719"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="13" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" ambiguous="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aan-ji-ALD" userLabel="Inputs">
                                                     <rect key="frame" x="0.0" y="102" width="195" height="617"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <subviews>
                                                         <stackView distribution="fill" orientation="horizontal" alignment="bottom" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="esB-MG-UUg" userLabel="First Name">
                                                             <rect key="frame" x="0.0" y="595" width="195" height="22"/>
@@ -1251,7 +1250,7 @@
                                                             </customSpacing>
                                                         </stackView>
                                                         <stackView distribution="fill" orientation="horizontal" alignment="bottom" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lyG-Sg-LN9" userLabel="First Name">
-                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="21"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="195" height="21"/>
                                                             <subviews>
                                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gbx-mP-gYS">
                                                                     <rect key="frame" x="-2" y="0.0" width="53" height="17"/>
@@ -1262,7 +1261,7 @@
                                                                     </textFieldCell>
                                                                 </textField>
                                                                 <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kLS-Ur-qH7">
-                                                                    <rect key="frame" x="55" y="-3" width="76" height="26"/>
+                                                                    <rect key="frame" x="55" y="-3" width="143" height="26"/>
                                                                     <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Z5n-VK-ZKn" id="Y9F-Gk-IaG">
                                                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                                                         <font key="font" metaFont="menu"/>
@@ -1286,6 +1285,11 @@
                                                             </customSpacing>
                                                         </stackView>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="Lr0-c0-CRH" firstAttribute="width" secondItem="lyG-Sg-LN9" secondAttribute="width" id="7n4-pO-Dm2"/>
+                                                        <constraint firstItem="esB-MG-UUg" firstAttribute="leading" secondItem="aan-ji-ALD" secondAttribute="leading" id="D3W-z3-fZ7"/>
+                                                        <constraint firstAttribute="trailing" secondItem="esB-MG-UUg" secondAttribute="trailing" id="Hep-4H-30d"/>
+                                                    </constraints>
                                                     <visibilityPriorities>
                                                         <integer value="1000"/>
                                                         <integer value="1000"/>
@@ -1349,7 +1353,7 @@
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
                                                 <connections>
-                                                    <action selector="generateWithSender:" target="5gI-5U-AMq" id="1tN-n6-WQf"/>
+                                                    <action selector="generateWithSender:" target="5gI-5U-AMq" id="sA4-ir-5Kl"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1393,11 +1397,15 @@
                         <outlet property="cityTextField" destination="T0S-aL-mEk" id="ohP-U7-3t0"/>
                         <outlet property="customerIDNumberTextField" destination="WQ5-3e-c65" id="AWa-o5-K5L"/>
                         <outlet property="dateOfBirthDatePicker" destination="UNi-hQ-cZQ" id="LHu-Da-WqO"/>
+                        <outlet property="documentIssueDatePicker" destination="tCI-dz-cJe" id="8pN-vq-gsJ"/>
                         <outlet property="expirationDatePicker" destination="9KN-8I-j2z" id="90z-Op-PRD"/>
                         <outlet property="eyeColor" destination="7pK-eR-awB" id="OKF-qI-59q"/>
                         <outlet property="firstNameTextField" destination="HJc-j2-cZ8" id="wln-hU-3bk"/>
                         <outlet property="imageView" destination="N5y-Gz-Z34" id="jhB-Yt-PKh"/>
                         <outlet property="issueDatePicker" destination="tCI-dz-cJe" id="hNp-6b-ufL"/>
+                        <outlet property="jurisdictionSpecificEndorsementCodesTextField" destination="e6O-SN-OGx" id="mMA-0P-d0z"/>
+                        <outlet property="jurisdictionSpecificRestrictionCodesTextField" destination="Ih6-Z8-f16" id="Rk0-3S-MoS"/>
+                        <outlet property="jurisdictionSpecificVehicleClassTextField" destination="uFM-jZ-R8a" id="hVP-MO-3zh"/>
                         <outlet property="lastNameTextField" destination="Kyh-s0-AxH" id="Mel-Ym-bHb"/>
                         <outlet property="middleNameTextField" destination="TR8-dh-hPY" id="OLN-Md-jfM"/>
                         <outlet property="sexPopupButton" destination="AlT-qi-kkG" id="uHy-jj-0BJ"/>
