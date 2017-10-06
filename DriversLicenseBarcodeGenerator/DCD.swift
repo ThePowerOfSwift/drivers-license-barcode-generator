@@ -1,15 +1,7 @@
 import Foundation
 
-class DCD: DataElement<String> {
-//    static var cardType: DataElement.CardType {
-//        return .DL
-//    }
-//    
-//    static var lengthType: String {
-//        return "V5ANS"
-//    }
-//    
-    override func format() -> String {
-        return "DCD\(data)"
+class DCD: DataElement<String>, DataElementFormatable {
+    func format() -> String {
+        return "DCD\(DataElementFormatter.formatString(data, length: 5))"
     }
 }

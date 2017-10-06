@@ -1,15 +1,7 @@
 import Foundation
 
-class DDG: DataElement<DataElementTruncation> {
-//    static var cardType: DataElement.CardType {
-//        return .Both
-//    }
-//    
-//    static var lengthType: String {
-//        return "V6ANS"
-//    }
-    
-    override func format() -> String {
-        return "DDG\(data)"
+class DDG: DataElement<DataElementTruncation>, DataElementFormatable {
+    func format() -> String {
+        return "DDG\(DataElementFormatter.formatString(data.rawValue, length: 6))"
     }
 }

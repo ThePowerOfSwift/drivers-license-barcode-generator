@@ -16,103 +16,83 @@ class Barcode {
     static let AAMVAVersionNumber = "08" // current version of the AAMVA standard
     static let jurisdictionVersionNumber = "00"
     
-    // Required Data Elements
-        
-    var jurisdictionSpecificVehicleClass: DataElement!
-    var jurisdictionSpecificRestrictionCodes: DataElement!
-    var jurisdictionSpecificEndorsementCodes: DataElement!
-    var documentExpirationDate: DataElement!
-    var customerFamilyName: DataElement!
-    var customerFirstName: DataElement!
-    var customerMiddleNames: DataElement!
-    var documentIssueDate: DataElement!
-    var dateOfBirth: DataElement!
-    var physicalDescriptionSex: DataElement!
-    var physicalDescriptionEyeColor: DataElement!
-    var phsyicalDescriptionHeight: DataElement!
-    var addressStreet1: DataElement!
-    var addressCity: DataElement!
-    var addressJurisdictionCode: DataElement!
-    var addressPostalCode: DataElement!
-    var customerIDNumber: DataElement!
-    var documentDiscriminator: DataElement!
-    var countryIdentification: DataElement!
-    var familyNameTruncation: DataElement!
-    var firstNameTruncation: DataElement!
-    var middleNameTruncation: DataElement!
+    let dataElements: [DataElement<DataElementFormatable>]
 
-    // Optional Data Elements
-    
-    var street2: DataElement?
-    var hairColor: DataElement?
-    var placeOfBirth: DataElement?
-    var auditInformation: DataElement?
-    var inventoryControlNumber: DataElement?
-    var aliasFamilyName: DataElement?
-    var aliasGivenName: DataElement?
-    var aliasSuffixName: DataElement?
-    var nameSuffix: DataElement?
-    var weightRange: DataElement?
-    var ethnicity: DataElement?
-    var standardVehicleClassification: DataElement?
-    var standardEndorsementCode: DataElement?
-    var standardRestrictionCode: DataElement?
-    var specificVehicleClassificationDescription: DataElement?
-    var specificEndorsementCodeDescription: DataElement?
-    var specificRestrictionCodeDescription: DataElement?
-    var complianceType: DataElement?
-    var cardRevisionDate: DataElement?
-    var HAZMATEndorsementExpirationDate: DataElement?
-    var limitedDurationDocumentIndicator: DataElement?
-    var weightPounds: DataElement?
-    var weightKilograms: DataElement?
-    var under18Until: DataElement?
-    var under19Until: DataElement?
-    var under21Until: DataElement?
-    var organDonorIndicator: DataElement?
-    var veteranIndicator: DataElement?
-    
+    // Required Data Elements
+//
+//    var jurisdictionSpecificVehicleClass: DCA!
+//    var jurisdictionSpecificRestrictionCodes: DBC!
+//    var jurisdictionSpecificEndorsementCodes: DCD!
+//    var documentExpirationDate: DBA!
+//    var customerFamilyName: DCS!
+//    var customerFirstName: DAC!
+//    var customerMiddleNames: DAD!
+//    var documentIssueDate: DBD!
+//    var dateOfBirth: DBB!
+//    var physicalDescriptionSex: DBC!
+//    var physicalDescriptionEyeColor: DAY!
+//    var phsyicalDescriptionHeight: DAU!
+//    var addressStreet1: DAG!
+//    var addressCity: DAI!
+//    var addressJurisdictionCode: DAJ!
+//    var addressPostalCode: DAK!
+//    var customerIDNumber: DAQ!
+//    var documentDiscriminator: DCF!
+//    var countryIdentification: DCG!
+//    var familyNameTruncation: DDE!
+//    var firstNameTruncation: DDF!
+//    var middleNameTruncation: DDG!
+//
+//    // Optional Data Elements
+//
+//    var street2: DataElement<Any>?
+//    var hairColor: DataElement<Any>?
+//    var placeOfBirth: DataElement<Any>?
+//    var auditInformation: DataElement<Any>?
+//    var inventoryControlNumber: DataElement<Any>?
+//    var aliasFamilyName: DataElement<Any>?
+//    var aliasGivenName: DataElement<Any>?
+//    var aliasSuffixName: DataElement<Any>?
+//    var nameSuffix: DataElement<Any>?
+//    var weightRange: DataElement<Any>?
+//    var ethnicity: DataElement<Any>?
+//    var standardVehicleClassification: DataElement<Any>?
+//    var standardEndorsementCode: DataElement<Any>?
+//    var standardRestrictionCode: DataElement<Any>?
+//    var specificVehicleClassificationDescription: DataElement<Any>?
+//    var specificEndorsementCodeDescription: DataElement<Any>?
+//    var specificRestrictionCodeDescription: DataElement<Any>?
+//    var complianceType: DataElement<Any>?
+//    var cardRevisionDate: DataElement<Any>?
+//    var HAZMATEndorsementExpirationDate: DataElement<Any>?
+//    var limitedDurationDocumentIndicator: DataElement<Any>?
+//    var weightPounds: DataElement<Any>?
+//    var weightKilograms: DataElement<Any>?
+//    var under18Until: DataElement<Any>?
+//    var under19Until: DataElement<Any>?
+//    var under21Until: DataElement<Any>?
+//    var organDonorIndicator: DataElement<Any>?
+//    var veteranIndicator: DataElement<Any>?
+
     var data: Data {
         return description.data(using: String.Encoding.ascii)!
     }
-    
-    init(dataElements: [DataElement]) {
-        // TODO: Assign each data element passed in
+
+    init(dataElements: [DataElement<DataElementFormatable>]) {
+        self.dataElements = dataElements
     }
 }
 
 extension Barcode: CustomStringConvertible {
     var description: String {
-        let requiredDataElementDescriptions = [
-            jurisdictionSpecificVehicleClass,
-            jurisdictionSpecificRestrictionCodes,
-            jurisdictionSpecificEndorsementCodes,
-            documentExpirationDate,
-            customerFamilyName,
-            customerFirstName,
-            customerMiddleNames,
-            documentIssueDate,
-            dateOfBirth,
-            physicalDescriptionSex,
-            physicalDescriptionEyeColor,
-            phsyicalDescriptionHeight,
-            addressStreet1,
-            addressCity,
-            addressJurisdictionCode,
-            addressPostalCode,
-            customerIDNumber,
-            documentDiscriminator,
-            countryIdentification,
-            familyNameTruncation,
-            firstNameTruncation,
-            middleNameTruncation
-        ].map { $0.description }.joined(separator: "")
-
-        return "\(header)\(requiredDataElementDescriptions)"
+        let formattedDataElemented = dataElements.map { $0.format() }
+        
+        return "\(header)\(formattedDataElemented.joined(separator: Barcode.dataElementSeparator))"
     }
-    
+
     private var header: Header {
         return Header(issuerIdentificationNumber: "00", AAMVAVersionNumber: "00", jurisdictionVersionNumber: "00", numberOfEntries: "01")
     }
 }
+
 

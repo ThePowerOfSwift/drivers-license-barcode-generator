@@ -74,11 +74,21 @@ class ViewController: NSViewController {
         }
     }
 
+    func dataElements() -> [DataElement<DataElementFormatable>] {
+        let jurisdictionSpecificVehicleClass = DCA("D") as DataElement<String>
+        
+        return [
+            jurisdictionSpecificVehicleClass,
+            DCB("A"),
+            DCD("NONE")
+        ]
+    }
 
     // MARK: - Actions
     
+    
     @IBAction func generate(sender: Any) {
-//        let barcode = Barcode(dataElements: [])
+        let barcode = Barcode(dataElements: dataElements())
 //
 //        barcode.jurisdictionSpecificVehicleClass = DataElement.DCA("D")
 //        barcode.jurisdictionSpecificRestrictionCodes = DataElement.DCB("A")
@@ -103,10 +113,10 @@ class ViewController: NSViewController {
 //        barcode.firstNameTruncation = DataElement.DDF(.No)
 //        barcode.middleNameTruncation = DataElement.DDG(.No)
 //        
-//        if let image = generatePDF417Barcode(from: barcode) {
-//            imageView.image = image
-//            print(barcode)
-//        }
+        if let image = generatePDF417Barcode(from: barcode) {
+            imageView.image = image
+            print(barcode)
+        }
     }
     
 //    private func buildDate(year: Int, month: Int, day: Int) -> Date! {
@@ -120,24 +130,24 @@ class ViewController: NSViewController {
 //        return calendar.date(from: dateComponents as DateComponents)!
 //    }
     
-//    func generatePDF417Barcode(from barcode: Barcode) -> NSImage? {
-//        if let filter = CIFilter(name: "CIPDF417BarcodeGenerator") {
-//            filter.setValue(barcode.data, forKey: "inputMessage")
-//            let transform = CGAffineTransform(scaleX: 5, y: 1)
-//            
-//            if let output = filter.outputImage?.applying(transform) {
-//                let cgImage = convertCIImageToCGImage(inputImage: output)
-//                
-//                return NSImage(cgImage: cgImage!, size: NSSize(width: 500, height: 100))
-//            }
-//        }
-//        
-//        return nil
-//    }
-//    
-//    func convertCIImageToCGImage(inputImage: CIImage) -> CGImage! {
-//        return CIContext(options: nil)
-//            .createCGImage(inputImage, from: inputImage.extent)
-//    }
+    func generatePDF417Barcode(from barcode: Barcode) -> NSImage? {
+        if let filter = CIFilter(name: "CIPDF417BarcodeGenerator") {
+            filter.setValue(barcode.data, forKey: "inputMessage")
+            let transform = CGAffineTransform(scaleX: 3, y: 3)
+            
+            if let output = filter.outputImage?.transformed(by: transform) {
+                let cgImage = convertCIImageToCGImage(inputImage: output)
+                
+                return NSImage(cgImage: cgImage!, size: NSSize(width: 500, height: 100))
+            }
+        }
+        
+        return nil
+    }
+    
+    func convertCIImageToCGImage(inputImage: CIImage) -> CGImage! {
+        return CIContext(options: nil)
+            .createCGImage(inputImage, from: inputImage.extent)
+    }
 }
 

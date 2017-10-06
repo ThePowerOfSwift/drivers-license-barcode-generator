@@ -1,15 +1,7 @@
 import Foundation
 
-class DAJ: DataElement<String> {
-//    static var cardType: DataElement.CardType {
-//        return .Both
-//    }
-//    
-//    static var lengthType: String {
-//        return "V6ANS"
-//    }
-    
-    override func format() -> String {
-        return "DAJ\(data)"
+class DAJ: DataElement<String>, DataElementFormatable {
+    func format() -> String {
+        return "DAJ\(DataElementFormatter.formatString(data, length: 6))"
     }
 }

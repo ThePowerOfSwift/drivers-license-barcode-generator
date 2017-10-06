@@ -1,15 +1,7 @@
 import Foundation
 
-class DDE: DataElement<DataElementTruncation> {
-//    static var cardType: DataElement.CardType {
-//        return .Both
-//    }
-//    
-//    static var lengthType: String {
-//        return "V6ANS"
-//    }
-    
-    override func format() -> String {
-        return "DDE\(data)"
+class DDE: DataElement<DataElementTruncation>, DataElementFormatable {
+    func format() -> String {
+        return "DDE\(DataElementFormatter.formatString(data.rawValue, length: 1))"
     }
 }
