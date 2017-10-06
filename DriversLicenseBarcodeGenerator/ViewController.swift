@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  DriversLicenseBarcodeGenerator
-//
-//  Created by Kyle Decot on 10/5/17.
-//  Copyright © 2017 Kyle Decot. All rights reserved.
-//
-
 import Cocoa
 import CoreImage
 
@@ -31,8 +23,9 @@ class ViewController: NSViewController {
     @IBOutlet var jurisdictionSpecificVehicleClassTextField: NSTextField!
     @IBOutlet var jurisdictionSpecificEndorsementCodesTextField: NSTextField!
     @IBOutlet var jurisdictionSpecificRestrictionCodesTextField: NSTextField!
+    @IBOutlet var physicalDescriptionHeightTextField: NSTextField!
 
-    private var firstName: String {
+    private var customerFirstName: String {
         return firstNameTextField.stringValue
     }
     
@@ -40,15 +33,19 @@ class ViewController: NSViewController {
         return middleNameTextField.stringValue
     }
     
-    private var lastName: String {
+    private var customerFamilyName: String {
         return lastNameTextField.stringValue;
     }
     
-    private var address1: String {
-        return address1TextField.stringValue;
+    private var customerIDNumber: String {
+        return customerIDNumberTextField.stringValue
     }
     
-    private var city: String {
+    private var dateOfBirth: Date {
+        return dateOfBirthDatePicker.dateValue
+    }
+    
+    private var addressCity: String {
         return cityTextField.stringValue
     }
     
@@ -60,7 +57,7 @@ class ViewController: NSViewController {
         return jurisdictionSpecificEndorsementCodesTextField.stringValue
     }
     
-    private var state: String {
+    private var addressJurisdictionCode: String {
         return "OH"
 //        return statePopupButton.selectedItem!.tag // TODO: How do you get the value of a popup?
     }
@@ -85,39 +82,55 @@ class ViewController: NSViewController {
         return zipTextField.stringValue
     }
     
-    var dataElements:[Any] {
-        let jurisdictionSpecificVehicleClass = DCA(self.jurisdictionSpecificVehicleClass)
-        let jurisdictionSpecificRestrictionCodes = DCB("NONE")
-        let jurisdictionSpecificEndorsementCodes = DCD(self.jurisdictionSpecificEndorsementCodes)
-        let documentExpirationDate = DBA(self.documentExpirationDate)
-        let customerMiddleNames = DAD([middleName])
-        let customerFamilyName = DCS(lastName)
-        let customerFirstName = DAC(firstName)
-        let documentIssueDate = DBD(self.documentIssueDate)
-        let addressPostalCode = DAK(self.addressPostalCode)
-        
-        return [
-            jurisdictionSpecificVehicleClass,
-            jurisdictionSpecificRestrictionCodes,
-            customerFirstName,
-            customerMiddleNames,
-            customerFamilyName,
-            jurisdictionSpecificEndorsementCodes,
-            documentIssueDate,
-            documentExpirationDate,
-        ]
+    private var physicalDescriptionSex: DataElementGender {
+        return .Male // TODO: Get this from the picker
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+    private var physicalDescriptionEyeColor: DataElementEyeColor {
+        return .Hazel // TODO: Get this from the picker
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
+    
+    private var physicalDescriptionHeight: Int {
+       return physicalDescriptionHeightTextField.integerValue
+    }
+    
+    private var documentDiscriminator: String {
+        return "1234567890123456789012345" // TODO: Create some kind of generator for this and populate a field in the UI w/ it initially
+    }
+    
+    private var addressStreet1: String {
+        return address1TextField.stringValue;
+    }
+    
+    private var countryIdentification: DataElementCountryIdentificationCode {
+        return .US // TODO
+    }
+    
+    var dataElements:[Any] {
+        return [
+            DCA(jurisdictionSpecificVehicleClass),
+            DCB(jurisdictionSpecificRestrictionCodes),
+            DCD(jurisdictionSpecificEndorsementCodes),
+            DBA(documentExpirationDate),
+            DCS(customerFamilyName),
+            DAC(customerFirstName),
+            DAD([middleName]),
+            DBD(documentIssueDate),
+            DBB(dateOfBirth),
+            DBC(physicalDescriptionSex),
+            DAY(physicalDescriptionEyeColor),
+            DAU(physicalDescriptionHeight),
+            DAG(addressStreet1),
+            DAI(addressCity),
+            DAJ(addressJurisdictionCode),
+            DAK(addressPostalCode),
+            DAQ(customerIDNumber),
+            DCF(documentDiscriminator),
+            DCG(countryIdentification),
+            DDE(.No), // TODO: This should be calculated inside of barcode
+            DDF(.No), // TODO: This should be calculated inside of barcode
+            DDG(.No), // TODO: This should be calculated inside of barcode
+        ]
     }
 
     // MARK: - Actions
@@ -130,17 +143,8 @@ class ViewController: NSViewController {
 
         }
     }
-    
-//    private func buildDate(year: Int, month: Int, day: Int) -> Date! {
-//        let calendar = NSCalendar.current
-//        
-//        var dateComponents = DateComponents()
-//        dateComponents.year = 2019
-//        dateComponents.month = 9
-//        dateComponents.day = 14
-//
-//        return calendar.date(from: dateComponents as DateComponents)!
-//    }
+
+    // MARK: - Helpers
     
     func generatePDF417Barcode(from barcode: Barcode) -> NSImage? {
         if let filter = CIFilter(name: "CIPDF417BarcodeGenerator") {
